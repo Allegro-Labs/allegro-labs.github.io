@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Forge Module Explorer — User guide</title>
+  <meta name="description" content="Forge Module Explorer app overview, usage steps, screenshots, and data note."/>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    html, body {
+      box-sizing: border-box;
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      margin-bottom: 24px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    figure {
+      width: fit-content;
+      margin: 16px auto;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid rgba(127, 127, 127, 0.35);
+      background: rgba(127, 127, 127, 0.06);
+    }
+  </style>
+</head>
+
+<body>
+<main>
+  <h1>Forge Module Explorer — User guide</h1>
+
+  <section>
+    <h2>Overview</h2>
+
+    <p>
+      The app shows which <strong>Forge modules</strong> are available on the current Jira or Confluence screen <strong>right
+      now</strong>.
+      Each UI element is titled with the <strong>module key</strong> (e.g., <code>jira.globalPage</code>).
+      Clicking opens a stub page/modal saying <code>Frontend iframe - &lt;moduleKey&gt;</code>.
+      <strong>backgroundScripts</strong> log the module key via <code>console.log</code>
+      (e.g., <code>Forge Module Explorer - confluence:backgroundScript</code>).
+    </p>
+
+    <p>
+      <strong>Note:</strong> some modules require permissions (e.g., <code>jira.adminPage</code>).
+    </p>
+  </section>
+
+  <hr/>
+
+  <section>
+    <h2>Using</h2>
+
+    <ol>
+      <li>Open the target Jira screen (Issue View, Project page, etc.).</li>
+      <li>Check the screen, dropdowns, and DevTools console. Visible items = available modules.</li>
+    </ol>
+  </section>
+
+  <section>
+    <figure>
+      <img src="./images/jira-work-item.png" alt="Forge Module Explorer Jira Work Item"/>
+    </figure>
+
+    <figure>
+      <img src="./images/conf-page.png" alt="Forge Module Explorer Confluence Page"/>
+    </figure>
+  </section>
+
+  <hr/>
+
+  <section>
+    <h2>Data note</h2>
+
+    <p>
+      This app <strong>does not modify</strong> Jira data; it only shows stubs and logs.
+    </p>
+  </section>
+</main>
+</body>
+</html>

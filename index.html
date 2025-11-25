@@ -1,10 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Allegro Labs - Home Page</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Allegro Labs</title>
+  <meta name="description" content="Allegro Labs — docs and policies."/>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    html, body {
+      box-sizing: border-box;
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      margin-bottom: 24px;
+    }
+
+    .links {
+      margin-top: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    a.card {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(127, 127, 127, 0.35);
+      background: rgba(127, 127, 127, 0.08);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.card:hover {
+      background: rgba(127, 127, 127, 0.12);
+    }
+
+    .title {
+      font-weight: 700;
+    }
+
+    .hint {
+      opacity: 0.8;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+  </style>
 </head>
+
 <body>
-  <p>Home page</p>
+<main>
+  <h1>Allegro Labs</h1>
+  <p>Docs and policies for Atlassian Marketplace apps.</p>
+
+  <section class="links">
+    <a class="card" href="/privacy-policy.html">
+      <div class="title">Privacy Policy</div>
+      <div class="hint">Privacy Policy for Plugins and Apps</div>
+    </a>
+
+    <a class="card" href="/forge-module-explorer/user-guide.html">
+      <div class="title">Forge Module Explorer</div>
+      <div class="hint">User guide (overview, usage, screenshots)</div>
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      Contact:
+      <a href="mailto:allegrolabs@protonmail.com">allegrolabs@protonmail.com</a>
+    </p>
+  </footer>
+</main>
 </body>
 </html>
